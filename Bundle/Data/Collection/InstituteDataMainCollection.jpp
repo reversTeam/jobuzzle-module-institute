@@ -1,0 +1,20 @@
+#import (Config.path +'/Modules/NamedData/Bundle/Data/Collection/NamedDataDataMainCollection') = NamedDataDataMainCollection;
+
+class InstituteDataMainCollection extends NamedDataDataMainCollection {
+
+	_entityType = 'Institute';
+	_entityClass = 'institute_data_main_entity';
+
+	getProtected : function () {
+		if (this._protected == undefined) {
+			var protected = _super();
+			this._protected = protected.concat(
+				Config.modules.Institute.collections.update.protected
+			);
+		}
+		return this._protected;
+	}
+
+}
+
+#export InstituteDataMainCollection;
