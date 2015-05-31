@@ -1,0 +1,28 @@
+#import (Config.path +'/Modules/NamedData/Bundle/Data/Entity/NamedDataDataMainEntity') = NamedDataDataMainEntity;
+
+class InstituteDataMainEntity extends NamedDataDataMainEntity {
+
+	_type = 'Institute';
+
+	#default get, set for _description;
+	#default get, set for _logo;
+
+	initialize : function () {
+		_super();
+
+		this._description = undefined;
+		this._logo = undefined;
+	}
+
+	hydrate : function (datas) {
+		_super(datas);
+
+		if (datas.name)
+			this.setDescription(datas.name);
+		if (datas.logo)
+			this.setLogo(datas.logo);
+	}
+
+}
+
+#export InstituteDataMainEntity;
