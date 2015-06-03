@@ -1,0 +1,15 @@
+#import (Config.path +'/Modules/NamedData/Bundle/Data/Template/NamedDataDataTimelineTemplate') = NamedDataDataTimelineTemplate;
+
+class InstituteDataTimelineTemplate extends NamedDataDataTimelineTemplate {
+
+	_viewClassName = 'InstituteDataTemplateTimelineView';
+
+	onListen : function () {
+		var dispatcher = _super();
+
+		return dispatcher;
+	}
+
+}
+
+#export InstituteDataTimelineTemplate;

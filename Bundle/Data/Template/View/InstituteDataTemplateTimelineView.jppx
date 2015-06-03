@@ -1,0 +1,22 @@
+#import (Config.path +'/Modules/NamedData/Bundle/Template/View/NamedDataDataTemplateTimelineView') = NamedDataDataTemplateTimelineView;
+
+class InstituteDataTemplateTimelineView extends NamedDataDataTemplateTimelineView {
+
+	render : function () {
+		var entity = this.state.entity;
+		var picture = 'https://s3.amazonaws.com/roomreveal_v2/gfx/company_placeholder.png';
+
+		// if (entity.getLogo() != 'undefined')
+		// 	picture = entity.getLogo();
+
+		return (
+			<div>
+				{entity.getId() +' : '+ entity.getType() +' | Url -> '+ entity.getUrl() +' | Name : '+ entity.getName() +' | Description : '+ entity.getDescription() }
+				<img src={picture} width="160" height="190" />
+			</div>
+		);
+	}
+
+}
+
+#export InstituteDataTemplateTimelineView;
