@@ -3,6 +3,7 @@
 class InstituteDataMainEntity extends NamedDataDataMainEntity {
 
 	_type = 'Institute';
+	_templateTimeline = 'institute_data_timeline_template';
 
 	#default get, set for _description;
 	#default get, set for _logo;
