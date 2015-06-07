@@ -1,0 +1,7 @@
+class InstituteDataDeleteTemplate extends NamedDataDataDeleteTemplate {
+
+	_viewClassName = 'InstituteDataTemplateDeleteView';
+	_type = 'Institute';
+	_route = 'institute';
+
+}

@@ -1,0 +1,6 @@
+class InstituteDataMainService extends NamedDataDataMainService {
+
+	_type = 'institute';
+	_title = 'Institutes';
+
+}
