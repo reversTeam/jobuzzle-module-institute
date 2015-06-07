@@ -1,0 +1,7 @@
+class InstituteDataCreateTemplate extends NamedDataDataCreateTemplate {
+
+	_viewClassName = 'InstituteDataTemplateCreateView';
+	_type = 'Institute';
+	_route = 'institute';
+
+}

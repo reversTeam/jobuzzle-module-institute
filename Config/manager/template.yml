@@ -1,2 +1,15 @@
 invokables:
 	institute_data_timeline_template : Data/Template/InstituteDataTimelineTemplate
+
+	institute_data_search_template	: Data/Template/InstituteDataSearchTemplate
+	institute_data_view_template	: Data/Template/InstituteDataViewTemplate
+	institute_data_create_template	: Data/Template/InstituteDataCreateTemplate
+	institute_data_update_template	: Data/Template/InstituteDataUpdateTemplate
+	institute_data_delete_template	: Data/Template/InstituteDataDeleteTemplate
+
+shared:
+	institute_data_search_template	: true
+	institute_data_view_template	: true
+	institute_data_create_template	: true
+	institute_data_update_template	: true
+	institute_data_delete_template	: true

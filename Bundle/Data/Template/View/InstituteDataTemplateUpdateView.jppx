@@ -1,0 +1,10 @@
+class InstituteDataTemplateUpdateView extends NamedDataDataTemplateUpdateView {
+
+	_class = 'institute';
+	_elementType = 'Institute';
+
+	display : function () {
+		return <div>Update Data</div>;
+	}
+
+}

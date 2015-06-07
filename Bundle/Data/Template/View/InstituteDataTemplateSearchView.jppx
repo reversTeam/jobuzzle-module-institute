@@ -1,0 +1,10 @@
+class InstituteDataTemplateSearchView extends NamedDataDataTemplateSearchView {
+
+	_class = 'institute';
+	_elementType = 'Institute';
+
+	display : function () {
+		return <div>Search Data</div>;
+	}
+
+}
