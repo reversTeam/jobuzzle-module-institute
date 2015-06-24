@@ -4,7 +4,7 @@ class InstituteDataTemplateViewView extends NamedDataDataTemplateViewView {
 	_elementType = 'Institute';
 
 	display : function () {
-		return <div>View Data</div>;
+		return <div>View Institute</div>;
 	}
 
 }
