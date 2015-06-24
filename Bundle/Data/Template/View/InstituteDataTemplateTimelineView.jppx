@@ -1,22 +1,29 @@
-#import (Config.path +'/Modules/NamedData/Bundle/Template/View/NamedDataDataTemplateTimelineView') = NamedDataDataTemplateTimelineView;
-
 class InstituteDataTemplateTimelineView extends NamedDataDataTemplateTimelineView {
 
-	render : function () {
+	getUrl : function () {
+		var router = serviceLocator.get('Router');
+		var entity = this.state.entity;
+
+		return router.build('/institute/view',{
+			institute_url : 'toto'//entity.getUrl()
+		});
+	}
+
+	display : function () {
 		var entity = this.state.entity;
 		var picture = 'https://s3.amazonaws.com/roomreveal_v2/gfx/company_placeholder.png';
 
-		// if (entity.getLogo() != 'undefined')
-		// 	picture = entity.getLogo();
+		if (entity.getLogo() != 'undefined')
+			picture = entity.getLogo();
+		var style = { backgroundImage : "url('"+ picture +"')" };
 
 		return (
-			<div>
-				{entity.getId() +' : '+ entity.getType() +' | Url -> '+ entity.getUrl() +' | Name : '+ entity.getName() +' | Description : '+ entity.getDescription() }
-				<img src={picture} width="160" height="190" />
+			<div className="institute-display-timeline" style={style} data-url={this.getUrl()} onClick={this.link}>
+				<div className="institute-bottom-info">
+					{entity.getName()}
+				</div>
 			</div>
 		);
 	}
 
 }
-
-#export InstituteDataTemplateTimelineView;
