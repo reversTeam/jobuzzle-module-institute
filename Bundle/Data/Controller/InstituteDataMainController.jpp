@@ -1,5 +1,6 @@
 class InstituteDataMainController extends NamedDataDataMainController {
 
 	_serviceName = 'institute_data_main_service';
+	_entityType = 'Institute';
 
 }
