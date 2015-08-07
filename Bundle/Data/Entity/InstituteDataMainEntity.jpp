@@ -1,5 +1,3 @@
-#import (Config.path +'/Modules/NamedData/Bundle/Data/Entity/NamedDataDataMainEntity') = NamedDataDataMainEntity;
-
 class InstituteDataMainEntity extends NamedDataDataMainEntity {
 
 	_type = 'Institute';
@@ -25,5 +23,3 @@ class InstituteDataMainEntity extends NamedDataDataMainEntity {
 	}
 
 }
-
-#export InstituteDataMainEntity;
