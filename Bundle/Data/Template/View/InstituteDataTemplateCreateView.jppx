@@ -7,7 +7,7 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-08-08 14:30:09
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-11 21:27:42
 **************************************************************/
 
 class InstituteDataTemplateCreateView extends NamedDataDataTemplateCreateView {
@@ -15,7 +15,7 @@ class InstituteDataTemplateCreateView extends NamedDataDataTemplateCreateView {
 	_class = 'institute';
 	_elementType = 'Institute';
 
-	display : function () {
+	public display : function () {
 		return <div>Create Institute</div>;
 	}
 
