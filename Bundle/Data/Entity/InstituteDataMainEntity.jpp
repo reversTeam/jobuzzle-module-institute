@@ -7,7 +7,7 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-08-08 14:30:09
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-19 12:31:12
 **************************************************************/
 
 class InstituteDataMainEntity extends NamedDataDataMainEntity {
@@ -28,8 +28,8 @@ class InstituteDataMainEntity extends NamedDataDataMainEntity {
 	hydrate : function (datas) {
 		_super(datas);
 
-		if (datas.name)
-			this.setDescription(datas.name);
+		if (datas.description)
+			this.setDescription(datas.description);
 		if (datas.logo)
 			this.setLogo(datas.logo);
 	}

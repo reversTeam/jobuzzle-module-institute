@@ -7,7 +7,7 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-08-08 14:30:09
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-19 11:53:39
 **************************************************************/
 
 class InstituteDataMainService extends NamedDataDataMainService {
@@ -15,6 +15,7 @@ class InstituteDataMainService extends NamedDataDataMainService {
 	_type = 'institute';
 	_entityType = 'Institute';
 	_title = 'Institutes';
+	_fieldsetName = 'institute_data_fieldset_form';
 
 	getTitleParamsView : function (entity) {
 		return _super(entity);

@@ -3,18 +3,17 @@
 *     ####         #                               #          *
 *       ##  #####  ######  #     # ####### ####### #  #####   * @Author: revers
 *       ## #     # #     # #     #      #       #  # #     #  *
-*       ## #     # #     # #     #     #       #   # #     #  * @Date:   2015-08-08 11:12:48
+*       ## #     # #     # #     #     #       #   # #     #  * @Date:   2015-09-19 11:59:07
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-19 11:57:36
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-19 12:01:48
 **************************************************************/
 
-class InstituteDataCreateTemplate extends NamedDataDataCreateTemplate {
+class InstituteDataEditForm extends NamedDataDataEditForm {
 
-	_viewClassName = 'InstituteDataTemplateCreateView';
-	_serviceName = 'institute_data_main_service';
-	_type = 'Institute';
-	_route = 'institute';
+	public _title = 'Edit institute';
+	public _url = '/institute/view/update';
+	public _paramNameRoute = 'institute_url';
 
 }
