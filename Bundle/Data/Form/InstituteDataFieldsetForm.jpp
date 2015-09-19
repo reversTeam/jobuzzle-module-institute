@@ -1,0 +1,51 @@
+/**************************************************************
+*     ####         #                               #          * Jobuzzle - Copyright All rights reserved
+*     ####         #                               #          *
+*       ##  #####  ######  #     # ####### ####### #  #####   * @Author: revers
+*       ## #     # #     # #     #      #       #  # #     #  *
+*       ## #     # #     # #     #     #       #   # #     #  * @Date:   2015-09-19 11:58:46
+*       ## #     # #     # #     #    #       #    # #     #  *
+*       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
+*  ####### #     # #     # #     #  #       #      # #        *
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-19 12:39:08
+**************************************************************/
+
+class InstituteDataFieldsetForm extends NamedDataDataFieldsetForm {
+
+	public _formName = 'Institute';
+	public _createFormName = 'institute_data_create_form';
+	public _searchFormName = 'institute_data_search_form';
+	public _editFormName = 'institute_data_edit_form';
+
+	public _descriptionDisplay = undefined;
+	public _logoDisplay = undefined;
+
+	public getElementsDisplay : function () {
+		var elementsDisplay = _super();
+
+		elementsDisplay['description'] = this.getDescriptionDisplay();
+		elementsDisplay['logo'] = this.getLogoDisplay();
+
+		return elementsDisplay;
+	}
+
+	public getDescriptionDisplay : function () {
+		if (!this['_descriptionDisplay']) {
+			this['_descriptionDisplay'] = {};
+			this['_descriptionDisplay']['type'] = 'Text';
+			this['_descriptionDisplay']['label'] = 'Description';
+		}
+		return this['_descriptionDisplay'];
+	}
+
+	public getLogoDisplay : function () {
+		if (!this['_logoDisplay']) {
+			this['_logoDisplay'] = {};
+			this['_logoDisplay']['type'] = 'Text';
+			this['_logoDisplay']['label'] = 'Logo';
+		}
+		return this['_logoDisplay'];
+	}
+
+
+}
