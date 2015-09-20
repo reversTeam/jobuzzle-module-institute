@@ -7,7 +7,7 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-19 12:39:08
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 11:48:45
 **************************************************************/
 
 class InstituteDataFieldsetForm extends NamedDataDataFieldsetForm {
@@ -33,7 +33,7 @@ class InstituteDataFieldsetForm extends NamedDataDataFieldsetForm {
 		if (!this['_descriptionDisplay']) {
 			this['_descriptionDisplay'] = {};
 			this['_descriptionDisplay']['type'] = 'Text';
-			this['_descriptionDisplay']['label'] = 'Description';
+			this['_descriptionDisplay']['label'] = 'form.input.institute.description';
 		}
 		return this['_descriptionDisplay'];
 	}
@@ -42,7 +42,7 @@ class InstituteDataFieldsetForm extends NamedDataDataFieldsetForm {
 		if (!this['_logoDisplay']) {
 			this['_logoDisplay'] = {};
 			this['_logoDisplay']['type'] = 'Text';
-			this['_logoDisplay']['label'] = 'Logo';
+			this['_logoDisplay']['label'] = 'form.input.institute.logo';
 		}
 		return this['_logoDisplay'];
 	}
