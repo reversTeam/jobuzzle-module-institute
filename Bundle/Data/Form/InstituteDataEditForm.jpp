@@ -7,12 +7,12 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-19 12:01:48
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 12:15:29
 **************************************************************/
 
 class InstituteDataEditForm extends NamedDataDataEditForm {
 
-	public _title = 'Edit institute';
+	public _title = 'form.title.institute.edit';
 	public _url = '/institute/view/update';
 	public _paramNameRoute = 'institute_url';
 

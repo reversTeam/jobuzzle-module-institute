@@ -7,12 +7,12 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-19 12:03:26
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 12:16:12
 **************************************************************/
 
 class InstituteDataSearchForm extends NamedDataDataSearchForm {
 
-	public _title = 'Search institute';
+	public _title = 'form.title.institute.search';
 	public _url = '/institute';
 
 }
