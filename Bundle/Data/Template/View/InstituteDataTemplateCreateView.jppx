@@ -7,12 +7,12 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-19 13:05:27
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 18:50:37
 **************************************************************/
 
 class InstituteDataTemplateCreateView extends NamedDataDataTemplateCreateView {
 
-	_class = 'institute';
-	_elementType = 'Institute';
+	public _class = 'institute';
+	public _elementType = 'Institute';
 
 }

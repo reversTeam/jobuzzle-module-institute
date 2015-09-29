@@ -7,12 +7,12 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-19 12:57:48
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 18:50:53
 **************************************************************/
 
 class InstituteDataTemplateUpdateView extends NamedDataDataTemplateUpdateView {
 
-	_class = 'institute';
-	_elementType = 'Institute';
+	public _class = 'institute';
+	public _elementType = 'Institute';
 
 }

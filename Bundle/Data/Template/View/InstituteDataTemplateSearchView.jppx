@@ -7,12 +7,12 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-08-08 14:30:09
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 18:50:46
 **************************************************************/
 
 class InstituteDataTemplateSearchView extends NamedDataDataTemplateSearchView {
 
-	_class = 'institute';
-	_elementType = 'Institute';
+	public _class = 'institute';
+	public _elementType = 'Institute';
 
 }

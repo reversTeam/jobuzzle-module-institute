@@ -7,31 +7,48 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-19 12:31:12
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 18:59:53
 **************************************************************/
 
 class InstituteDataMainEntity extends NamedDataDataMainEntity {
 
-	_type = 'Institute';
-	_templateTimeline = 'institute_data_timeline_template';
-
-	#default get, set for _description;
-	#default get, set for _logo;
+	public _type = 'Institute';
+	public _templateTimeline = 'institute_data_timeline_template';
 
 	initialize : function () {
 		_super();
 
-		this._description = undefined;
-		this._logo = undefined;
+		this['_description'] = undefined;
+		this['_logo'] = undefined;
 	}
 
 	hydrate : function (datas) {
 		_super(datas);
 
-		if (datas.description)
-			this.setDescription(datas.description);
-		if (datas.logo)
-			this.setLogo(datas.logo);
+		if (datas['description'])
+			this.setDescription(datas['description']);
+		if (datas['logo'])
+			this.setLogo(datas['logo']);
+	}
+
+	public getDescription : function () {
+		return this['_description'];
+	}
+
+	public setDescription : function (description) {
+		this['_description'] = description;
+
+		return this;
+	}
+
+	public getLogo : function () {
+		return this['_logo'];
+	}
+
+	public setLogo : function (logo) {
+		this['_logo'] = logo;
+
+		return this;
 	}
 
 }

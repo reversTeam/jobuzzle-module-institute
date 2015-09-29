@@ -7,13 +7,13 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-11 21:27:46
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 18:50:42
 **************************************************************/
 
 class InstituteDataTemplateDeleteView extends NamedDataDataTemplateDeleteView {
 
-	_class = 'institute';
-	_elementType = 'Institute';
+	public _class = 'institute';
+	public _elementType = 'Institute';
 
 	public display : function () {
 		return <div>Delete Institute</div>;

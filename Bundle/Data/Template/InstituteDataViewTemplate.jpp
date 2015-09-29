@@ -7,13 +7,13 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-08-08 14:30:09
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 18:51:31
 **************************************************************/
 
 class InstituteDataViewTemplate extends NamedDataDataViewTemplate {
 
-	_viewClassName = 'InstituteDataTemplateViewView';
-	_type = 'Institute';
-	_route = 'institute';
+	public _viewClassName = 'InstituteDataTemplateViewView';
+	public _type = 'Institute';
+	public _route = 'institute';
 
 }
