@@ -7,22 +7,22 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-11 21:27:50
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-21 23:10:43
 **************************************************************/
 
 class InstituteDataTemplateTimelineView extends NamedDataDataTemplateTimelineView {
 
 	getUrl : function () {
 		var router = serviceLocator.get('Router');
-		var entity = this.state.entity;
+		var entity = this.state['entity'];
 
 		return router.build('/institute/view',{
-			institute_url : entity.getUrl()
+			'institute_url' : entity.getUrl()
 		});
 	}
 
 	public display : function () {
-		var entity = this.state.entity;
+		var entity = this.state['entity'];
 		var picture = 'https://s3.amazonaws.com/roomreveal_v2/gfx/company_placeholder.png';
 
 		if (entity.getLogo() != 'undefined')

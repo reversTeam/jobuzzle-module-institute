@@ -7,14 +7,14 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-19 11:57:54
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 18:51:26
 **************************************************************/
 
 class InstituteDataUpdateTemplate extends NamedDataDataUpdateTemplate {
 
-	_viewClassName = 'InstituteDataTemplateUpdateView';
-	_serviceName = 'institute_data_main_service';
-	_type = 'Institute';
-	_route = 'institute';
+	public _viewClassName = 'InstituteDataTemplateUpdateView';
+	public _serviceName = 'institute_data_main_service';
+	public _type = 'Institute';
+	public _route = 'institute';
 
 }
