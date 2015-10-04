@@ -7,12 +7,13 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 18:51:20
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-10-04 01:04:11
 **************************************************************/
 
 class InstituteDataTimelineTemplate extends NamedDataDataTimelineTemplate {
 
 	public _viewClassName = 'InstituteDataTemplateTimelineView';
+	public _type = 'Institute';
 
 	public onListen : function () {
 		var dispatcher = _super();
