@@ -7,13 +7,14 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 18:59:53
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-03 16:13:46
 **************************************************************/
 
 class InstituteDataMainEntity extends NamedDataDataMainEntity {
 
 	public _type = 'Institute';
 	public _templateTimeline = 'institute_data_timeline_template';
+	public _templateMiniature = 'institute_data_miniature_template';
 
 	initialize : function () {
 		_super();
