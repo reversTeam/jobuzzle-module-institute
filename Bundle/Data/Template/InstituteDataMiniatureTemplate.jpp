@@ -1,0 +1,17 @@
+/**************************************************************
+*     ####         #                               #          * Jobuzzle - Copyright All rights reserved
+*     ####         #                               #          *
+*       ##  #####  ######  #     # ####### ####### #  #####   * @Author: revers
+*       ## #     # #     # #     #      #       #  # #     #  *
+*       ## #     # #     # #     #     #       #   # #     #  * @Date:   2015-11-03 16:13:59
+*       ## #     # #     # #     #    #       #    # #     #  *
+*       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
+*  ####### #     # #     # #     #  #       #      # #        *
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-03 16:15:42
+**************************************************************/
+
+class InstituteDataMiniatureTemplate extends NamedDataDataMiniatureTemplate {
+
+	_viewClassName = 'InstituteDataTemplateMiniatureView';
+
+}

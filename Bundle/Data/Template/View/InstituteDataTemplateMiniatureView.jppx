@@ -1,0 +1,33 @@
+/**************************************************************
+*     ####         #                               #          * Jobuzzle - Copyright All rights reserved
+*     ####         #                               #          *
+*       ##  #####  ######  #     # ####### ####### #  #####   * @Author: revers
+*       ## #     # #     # #     #      #       #  # #     #  *
+*       ## #     # #     # #     #     #       #   # #     #  * @Date:   2015-11-03 16:14:37
+*       ## #     # #     # #     #    #       #    # #     #  *
+*       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
+*  ####### #     # #     # #     #  #       #      # #        *
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-03 16:16:28
+**************************************************************/
+
+class InstituteDataTemplateMiniatureView extends NamedDataDataTemplateMiniatureView {
+
+	/**
+	* Display miniature for baseuser
+	**/
+	public display : function () {
+		var self = this;
+		var entity = this.state['entity'];
+		var picture = '';
+
+		if (entity.getLogo() != undefined)
+			picture = this.getUrlAsset(entity.getLogo());
+		var style = { backgroundImage : "url('"+ picture +"')" };
+
+		return (
+			<div className='user-display-miniature' style={style}>
+			</div>
+		);
+	}
+
+}

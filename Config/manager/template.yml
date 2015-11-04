@@ -7,11 +7,12 @@
 #       ## #     # #     # #     #    #       #    # #     #  #
 #       ## #     # #     # #     #   #       #     # ######   # @Last Modified by:   revers
 #  ####### #     # #     # #     #  #       #      # #        #
-#  ######   #####   ######  #####  ####### ####### # #######  # @Last Modified time: 2015-08-08 14:30:09
+#  ######   #####   ######  #####  ####### ####### # #######  # @Last Modified time: 2015-11-03 16:08:57
 ###############################################################
 
 invokables:
 	institute_data_timeline_template : Data/Template/InstituteDataTimelineTemplate
+	institute_data_miniature_template : Data/Template/InstituteDataMiniatureTemplate
 
 	institute_data_search_template	: Data/Template/InstituteDataSearchTemplate
 	institute_data_view_template	: Data/Template/InstituteDataViewTemplate
