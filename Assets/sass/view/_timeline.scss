@@ -1,0 +1,62 @@
+/**************************************************************
+*     ####         #                               #          * Jobuzzle - Copyright All rights reserved
+*     ####         #                               #          *
+*       ##  #####  ######  #     # ####### ####### #  #####   * @Author: revers
+*       ## #     # #     # #     #      #       #  # #     #  *
+*       ## #     # #     # #     #     #       #   # #     #  * @Date:   2015-11-08 01:21:15
+*       ## #     # #     # #     #    #       #    # #     #  *
+*       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
+*  ####### #     # #     # #     #  #       #      # #        *
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-08 01:47:33
+**************************************************************/
+
+div.timeline.institute {
+	display: inline-block;
+	width : $timeline_entity_width;
+	height: $timeline_entity_height;	
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	@include backgroundApp;
+
+	div.picture {
+		width: 100px;
+		height: 100px;
+		animation: fadeIn 1s linear both;
+		opacity: 0;
+		background-size: cover;
+		background-color : rgba($primary_color, 0.8);	
+		border-radius: 50%;
+		border: 2px solid $primary_color;
+		margin: 0 auto;
+	}
+
+	div.bottom-info {
+			width: 100%;
+			height: 30px;
+			transition: 0.3s;
+			color: $primary_color;
+			text-align: center;
+			position: relative;
+
+		span.name {
+		    line-height: 30px;
+			font-size: 12px;
+			white-space: nowrap;
+			width: 100%;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			position: absolute;
+			left: 0px;
+		}
+	}
+
+	div.footer {
+		text-align: center;
+		height: 10px;
+		font-size: 12px;
+		line-height: 12px;
+		color: darken($white_color, 40);
+	}
+
+}

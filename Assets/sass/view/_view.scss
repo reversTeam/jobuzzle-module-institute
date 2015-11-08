@@ -1,0 +1,51 @@
+/**************************************************************
+*     ####         #                               #          * Jobuzzle - Copyright All rights reserved
+*     ####         #                               #          *
+*       ##  #####  ######  #     # ####### ####### #  #####   * @Author: revers
+*       ## #     # #     # #     #      #       #  # #     #  *
+*       ## #     # #     # #     #     #       #   # #     #  * @Date:   2015-11-08 01:16:12
+*       ## #     # #     # #     #    #       #    # #     #  *
+*       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
+*  ####### #     # #     # #     #  #       #      # #        *
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-08 01:59:55
+**************************************************************/
+
+div.view.institute {
+
+	div.picture {
+		display: block;
+		margin: 20px auto;
+		width: 160px;
+		height: 160px;
+		border-radius: 50%;
+		border: 2px solid $primary_color;
+		background-size : 100% 100%;
+		background-repeat: no-repeat;
+		background-color : rgba($primary_color, 0.8);
+	}
+
+	div.explain {
+		display: inline-block;
+		vertical-align: top;
+		text-align: center;
+		width: 100%;
+		padding-bottom: 20px;
+
+		div.name {
+			display: block;
+			vertical-align: top;
+			color: $primary_color;
+			font-size: 64px;
+			font-weight: 200;
+		}
+
+		p.description {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			color : darken($white_color, 35);
+			width: 800px;
+		}
+	}
+}
