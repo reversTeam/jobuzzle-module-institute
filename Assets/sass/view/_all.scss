@@ -3,17 +3,12 @@
 *     ####         #                               #          *
 *       ##  #####  ######  #     # ####### ####### #  #####   * @Author: revers
 *       ## #     # #     # #     #      #       #  # #     #  *
-*       ## #     # #     # #     #     #       #   # #     #  * @Date:   2015-08-08 11:12:48
+*       ## #     # #     # #     #     #       #   # #     #  * @Date:   2015-11-08 01:15:49
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-08 01:12:40
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-08 01:16:04
 **************************************************************/
 
-class InstituteDataViewTemplate extends NamedDataDataViewTemplate {
-
-	public _viewClassName = 'InstituteDataTemplateViewView';
-	public _type = 'Institute';
-	public _route = 'institute';
-
-}
+@import "view";
+@import "timeline";

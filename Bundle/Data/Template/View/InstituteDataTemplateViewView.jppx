@@ -7,7 +7,7 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 18:50:57
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-08 01:19:16
 **************************************************************/
 
 class InstituteDataTemplateViewView extends NamedDataDataTemplateViewView {
@@ -15,8 +15,31 @@ class InstituteDataTemplateViewView extends NamedDataDataTemplateViewView {
 	public _class = 'institute';
 	public _elementType = 'Institute';
 
-	public display : function () {
-		return <div>View Institute</div>;
+	display : function () {
+		var entity = this.state['entity'];
+		var picture = '';
+		var style = {};
+		var t = serviceLocator.get('Translator');
+
+		if (entity.getLogo() != undefined)
+			picture = this.getUrlAsset(entity.getLogo());
+		style['backgroundImage'] = 'url("'+ picture +'")'; 
+		return <div className={["view institute ", this.getClass() ].join(' ')}>
+			<div className="container">
+				<div className="picture" style={style}></div>
+				<div className="explain">
+					<div className="name">
+						{entity.getName()}
+					</div>
+					<p className="description">{entity.getDescription()}</p>
+				</div>
+				{this.displayContent(entity)}
+			</div>
+		</div>;
+	}
+
+	displayContent : function () {
+		return null;
 	}
 
 }
