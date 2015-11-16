@@ -7,22 +7,16 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-08 01:51:21
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-10 02:17:13
 **************************************************************/
 
 class InstituteDataTemplateTimelineView extends NamedDataDataTemplateTimelineView {
 
 	public display : function () {
 		var entity = this.state['entity'];
-		var picture = 'https://s3.amazonaws.com/roomreveal_v2/gfx/company_placeholder.png';
-
-		if (entity.getLogo() != 'undefined')
-			picture = this.getUrlAsset(entity.getLogo());
-		var style = { backgroundImage : "url('"+ picture +"')" };
 
 		return <div className="timeline institute" data-url={this.getUrl()} onClick={this.link}>
-			<div className="picture" style={style}>
-			</div>
+			{entity.displayMiniature()}
 			<div className="bottom-info">
 				<span className="name">{entity.getName()}</span>
 			</div>

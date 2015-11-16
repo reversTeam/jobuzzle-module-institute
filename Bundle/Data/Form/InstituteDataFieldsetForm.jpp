@@ -7,7 +7,7 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 11:48:45
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-08 19:37:42
 **************************************************************/
 
 class InstituteDataFieldsetForm extends NamedDataDataFieldsetForm {
@@ -32,7 +32,7 @@ class InstituteDataFieldsetForm extends NamedDataDataFieldsetForm {
 	public getDescriptionDisplay : function () {
 		if (!this['_descriptionDisplay']) {
 			this['_descriptionDisplay'] = {};
-			this['_descriptionDisplay']['type'] = 'Text';
+			this['_descriptionDisplay']['type'] = 'Textarea';
 			this['_descriptionDisplay']['label'] = 'form.input.institute.description';
 		}
 		return this['_descriptionDisplay'];

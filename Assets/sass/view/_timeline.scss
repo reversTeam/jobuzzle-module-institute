@@ -7,7 +7,7 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-08 01:47:33
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-10 02:16:55
 **************************************************************/
 
 div.timeline.institute {
@@ -19,14 +19,12 @@ div.timeline.institute {
 	cursor: pointer;
 	@include backgroundApp;
 
-	div.picture {
+	div.institute.miniature {
 		width: 100px;
 		height: 100px;
+		display: block;
 		animation: fadeIn 1s linear both;
 		opacity: 0;
-		background-size: cover;
-		background-color : rgba($primary_color, 0.8);	
-		border-radius: 50%;
 		border: 2px solid $primary_color;
 		margin: 0 auto;
 	}
