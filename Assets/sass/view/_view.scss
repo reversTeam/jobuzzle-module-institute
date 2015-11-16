@@ -7,21 +7,22 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-08 01:59:55
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-10 02:18:03
 **************************************************************/
 
 div.view.institute {
 
-	div.picture {
+	div.actions {
+		float : right;
+		right: 20px;
+	}
+
+	div.institute.miniature {
 		display: block;
 		margin: 20px auto;
 		width: 160px;
 		height: 160px;
-		border-radius: 50%;
 		border: 2px solid $primary_color;
-		background-size : 100% 100%;
-		background-repeat: no-repeat;
-		background-color : rgba($primary_color, 0.8);
 	}
 
 	div.explain {
@@ -45,7 +46,7 @@ div.view.institute {
 			margin-right: auto;
 			text-align: center;
 			color : darken($white_color, 35);
-			width: 800px;
+			width: 80%;
 		}
 	}
 }
