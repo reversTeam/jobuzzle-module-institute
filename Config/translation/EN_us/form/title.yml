@@ -7,10 +7,11 @@
 #       ## #     # #     # #     #    #       #    # #     #  #
 #       ## #     # #     # #     #   #       #     # ######   # @Last Modified by:   revers
 #  ####### #     # #     # #     #  #       #      # #        #
-#  ######   #####   ######  #####  ####### ####### # #######  # @Last Modified time: 2015-09-20 12:14:21
+#  ######   #####   ######  #####  ####### ####### # #######  # @Last Modified time: 2015-11-21 15:09:55
 ###############################################################
 
 institute:
 	create: 'Create an institute'
 	edit: 'Edit an institute'
 	search : 'Search intitutes'
+	delete: Delete institute

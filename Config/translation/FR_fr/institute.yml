@@ -7,7 +7,7 @@
 #       ## #     # #     # #     #    #       #    # #     #  #
 #       ## #     # #     # #     #   #       #     # ######   # @Last Modified by:   revers
 #  ####### #     # #     # #     #  #       #      # #        #
-#  ######   #####   ######  #####  ####### ####### # #######  # @Last Modified time: 2015-11-09 14:16:19
+#  ######   #####   ######  #####  ####### ####### # #######  # @Last Modified time: 2015-11-21 15:09:25
 ###############################################################
 
 page:
@@ -17,3 +17,8 @@ page:
 
 timeline:
 	institute: Établissement
+
+view:
+	actions:
+		edit: Éditer l'établissement
+		delete: Supprimer l'établissement

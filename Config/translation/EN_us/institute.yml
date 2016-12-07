@@ -7,10 +7,14 @@
 #       ## #     # #     # #     #    #       #    # #     #  #
 #       ## #     # #     # #     #   #       #     # ######   # @Last Modified by:   revers
 #  ####### #     # #     # #     #  #       #      # #        #
-#  ######   #####   ######  #####  ####### ####### # #######  # @Last Modified time: 2015-11-09 14:16:26
+#  ######   #####   ######  #####  ####### ####### # #######  # @Last Modified time: 2015-11-21 15:09:07
 ###############################################################
 
 page:
 	title:
 		Institutes: Institutes
 		view: '{{url}}'
+view:
+	actions:
+		edit: Edit institute
+		delete: Delete institute

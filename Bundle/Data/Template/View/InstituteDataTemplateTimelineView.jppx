@@ -7,15 +7,21 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-10 02:17:13
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-21 13:16:54
 **************************************************************/
 
 class InstituteDataTemplateTimelineView extends NamedDataDataTemplateTimelineView {
 
-	public display : function () {
+	public getClassElement : function () {
+		var classElement = _super();
+		classElement.push('institute');
+		return classElement;
+	}
+
+	public displayContent : function () {
 		var entity = this.state['entity'];
 
-		return <div className="timeline institute" data-url={this.getUrl()} onClick={this.link}>
+		return <div data-url={this.getUrl()} onClick={this.link}>
 			{entity.displayMiniature()}
 			<div className="bottom-info">
 				<span className="name">{entity.getName()}</span>
@@ -23,6 +29,7 @@ class InstituteDataTemplateTimelineView extends NamedDataDataTemplateTimelineVie
 			{this.displayFooter()}
 		</div>;
 	}
+
 
 	public displayFooter : function () {
 		var t = serviceLocator.get('Translator');

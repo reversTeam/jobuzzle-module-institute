@@ -7,13 +7,13 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 18:51:11
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-21 15:31:07
 **************************************************************/
 
 class InstituteDataDeleteTemplate extends NamedDataDataDeleteTemplate {
 
 	public _viewClassName = 'InstituteDataTemplateDeleteView';
 	public _type = 'Institute';
-	public _route = 'institute';
+	public _serviceName = 'institute_data_main_service';
 
 }

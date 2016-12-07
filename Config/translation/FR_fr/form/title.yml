@@ -7,10 +7,11 @@
 #       ## #     # #     # #     #    #       #    # #     #  #
 #       ## #     # #     # #     #   #       #     # ######   # @Last Modified by:   revers
 #  ####### #     # #     # #     #  #       #      # #        #
-#  ######   #####   ######  #####  ####### ####### # #######  # @Last Modified time: 2015-11-06 16:54:49
+#  ######   #####   ######  #####  ####### ####### # #######  # @Last Modified time: 2015-11-21 15:09:38
 ###############################################################
 
 institute:
 	create: 'Créer un établissement'
 	edit: 'Editer un établissement'
 	search : 'Rechercher des établissements'
+	delete: Supprimer l'établissement

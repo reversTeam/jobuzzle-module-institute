@@ -7,7 +7,7 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-08 19:37:42
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-27 14:59:39
 **************************************************************/
 
 class InstituteDataFieldsetForm extends NamedDataDataFieldsetForm {
@@ -18,7 +18,10 @@ class InstituteDataFieldsetForm extends NamedDataDataFieldsetForm {
 	public _editFormName = 'institute_data_edit_form';
 
 	public _descriptionDisplay = undefined;
+	public _descriptionInput = undefined;
+
 	public _logoDisplay = undefined;
+	public _logoInput = undefined;
 
 	public getElementsDisplay : function () {
 		var elementsDisplay = _super();
@@ -27,6 +30,15 @@ class InstituteDataFieldsetForm extends NamedDataDataFieldsetForm {
 		elementsDisplay['logo'] = this.getLogoDisplay();
 
 		return elementsDisplay;
+	}
+
+	public getElementsInput : function () {
+		var elementsInput = _super();
+
+		elementsInput['description'] = this.getDescriptionInput();
+		elementsInput['logo'] = this.getLogoInput();
+
+		return elementsInput;
 	}
 
 	public getDescriptionDisplay : function () {
@@ -47,5 +59,39 @@ class InstituteDataFieldsetForm extends NamedDataDataFieldsetForm {
 		return this['_logoDisplay'];
 	}
 
+	public getDescriptionInput : function () {
+		if (!this['_descriptionInput']) {
+			this['_descriptionInput'] = {};
+
+			this['_descriptionInput']['required'] = true;
+
+			this['_descriptionInput']['filters'] = [];
+			this['_descriptionInput']['filters'][0] = {};
+			this['_descriptionInput']['filters'][0]['name'] = 'Trim';
+
+			this['_descriptionInput']['validators'] = [];
+			this['_descriptionInput']['validators'][0] = {};
+			this['_descriptionInput']['validators'][0]['name'] = 'Text';
+
+		}
+		return this['_descriptionInput'];
+	}
+
+	public getLogoInput : function () {
+		if (!this['_logoInput']) {
+			this['_logoInput'] = {};
+
+			this['_logoInput']['required'] = true;
+
+			this['_logoInput']['filters'] = [];
+			this['_logoInput']['filters'][0] = {};
+			this['_logoInput']['filters'][0]['name'] = 'Trim';
+
+			this['_logoInput']['validators'] = [];
+			this['_logoInput']['validators'][0] = {};
+			this['_logoInput']['validators'][0]['name'] = 'Text';
+		}
+		return this['_logoInput'];
+	}
 
 }
